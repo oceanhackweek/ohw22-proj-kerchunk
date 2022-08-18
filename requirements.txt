@@ -1,1 +1,2 @@
 kerchunk
+git+https://github.com/IOMRC/intake-aodn.git

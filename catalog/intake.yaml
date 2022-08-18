@@ -1,0 +1,18 @@
+metadata:
+  version: 1
+sources:
+  Himawari_SST_L3C_1d_ngt:
+    driver: intake_xarray.xzarr.ZarrSource
+    description: 'Himawari-8 - SST - L3C'
+    metadata:
+      permalink: https://registry.opendata.aws/noaa-himawari/
+    args:
+      urlpath: 'reference://'
+      storage_options:
+        simple_templates: True
+        target_options:
+          compression: 'zstd'
+        fo: '{{CATALOG_DIR}}Himawari_SST_L3C_NCCF.zstd'
+        remote_options:
+          anon: true
+        remote_protocol: s3
