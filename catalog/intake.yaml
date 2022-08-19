@@ -8,11 +8,13 @@ sources:
       permalink: https://registry.opendata.aws/noaa-himawari/
     args:
       urlpath: 'reference://'
+      chunks:
+        time: 30
       storage_options:
         simple_templates: True
         target_options:
           compression: 'zstd'
-        fo: '{{CATALOG_DIR}}Himawari_SST_L3C_NCCF.zstd'
+        fo: 'https://github.com/oceanhackweek/ohw22-proj-kerchunk/raw/main/catalog/Himawari_SST_L3C_NCCF.zstd'
         remote_options:
           anon: true
         remote_protocol: s3
