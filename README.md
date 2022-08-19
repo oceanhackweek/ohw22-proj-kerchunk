@@ -37,11 +37,13 @@ Himawari 8 Sea Surface Temperature (https://registry.opendata.aws/noaa-himawari/
 
 ### Workflow
 
-The workflow for this analysis 
-
+1. Identify datasets
+2. Examine dataset file format and internal chunking
+3. Generate kerchunk index
+4. Analyse dataset with [GCM-Fitlers](https://gcm-filters.readthedocs.io/en/latest/)
 
 ### References
-[OHW Project Proposal] (https://github.com/oceanhackweek/discussions/discussions/8)
-https://github.com/fsspec/kerchunk
-https://pangeo-forge.readthedocs.io/en/latest/
-https://www.frontiersin.org/articles/10.3389/fclim.2021.782909/full 
+1. [OHW Project Proposal](https://github.com/oceanhackweek/discussions/discussions/8)
+2. https://github.com/fsspec/kerchunk
+3. https://pangeo-forge.readthedocs.io/en/latest/
+4. https://www.frontiersin.org/articles/10.3389/fclim.2021.782909/full 
